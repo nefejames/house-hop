@@ -7,10 +7,8 @@ import Image from "next/image";
 
 export default function Card({ img, imgAlt, title, specs, location, price }) {
   return (
-    <Card>
-      <div className="img-box">
-        <Image />
-      </div>
+    <Box>
+      <div className="img-box"></div>
 
       <div className="house-details">
         <p>Title</p>
@@ -20,11 +18,11 @@ export default function Card({ img, imgAlt, title, specs, location, price }) {
         <span>location</span>
         <span>&#8358;55k/night</span>
       </div>
-    </Card>
+    </Box>
   );
 }
 
-const Card = styled.div`
+const Box = styled.div`
   .img-box {
   }
 
